@@ -1,0 +1,309 @@
+{% extends "layout.html" %}
+{% block content %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='aos.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style-recipe-contact.css') }}">
+</head>
+<body>
+    <div class="Banner">
+    <img src="{{ url_for('static', filename='side picture.jpg') }}">
+        <div class="content">
+            <h2> What to Eat ?</h2>
+            <p>
+                Hey Foodie!! Surfing over internet to find what to eat?
+                        Hang on and take a pit-stop here to find about exotic, mouth watering, Indian delicacies.
+                        Have a look at our different collections and choose what you would like to eat today.
+                <br>
+                <br>
+                <h1 style="color: #fff;">
+                    Wondering what to eat today ? Look for our
+                    <a href="Recipes.html" style="text-decoration: none; color:yellow;">
+                        Recipes
+                    </a>
+                    section
+                </h1>
+            </p>
+        </div>
+    </div>
+    <!-- About Food -->
+    <section class="joinus">
+        <div class="contain">
+            <h2>Want your recipes on our website? Share it below!</h2>
+            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdiUEmTvVi7VWtKdZkTl1Z_aan-HowaifVuBZqe7_mRXkF24A/formResponse" method="POST" target="_self">
+                <div class="row100">
+                    <div class="col">
+                        <div class="inputBox">
+                            <input
+                                type="text"
+                                name="entry.2005620554"
+                                id="name"
+                                class="form-control"
+                                required
+                            >
+                            <span class="textr">Full Name</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inputBox">
+                            <input
+                                type="text"
+                                name="entry.1045781291"
+                                id="email"
+                                class="form-control"
+                                required
+                            >
+                            <span class="textr">Email Id</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inputBox">
+                            <input
+                                type="text"
+                                name="entry.1166974658"
+                                id="phone"
+                                class="form-control"
+                                required
+                            >
+                            <span class="textr">Contact no.</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inputBox">
+                            <textarea class="tbt1" name="entry.839337160" required="required"></textarea>
+                            <span class="textr">
+                                <p class="color">Recipe Name and Ingredients</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inputBox">
+                            <textarea class="tbt2" name="entry.655640177" required="required"></textarea>
+                            <span class="textr">
+                                <p class="color">Enter Your Recipe Here.....</p>
+                            </span>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="btn">
+                        <button
+                            type="submit"
+                            name="submit"
+                            value="submit"
+                            class="btn btn-danger btn-block"
+                            id="submit"
+                        >Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Categories -->
+    <section class="categories">
+        <h2 class="heading_categories">Search by Categories</h2>
+        <p class="text">
+            As our eating habbits have evolved we have categorized the food in two main domains, VEG and NON-VEG.
+                Have a look at our collections of different cuisines and enjoy the joy of food.
+        </p>
+        <div class="container">
+            <a href="Veg.html">
+                <div
+                    class="categorybox"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="400"
+                >
+                    <div>
+                        <img src="{{ url_for('static', filename='Marharaja-Thali-cover-photo-1.jpg') }}">
+                        <h2> Vegetarian</h2>
+                    </div>
+                </div>
+            </a>
+            <a href="Nonveg.html">
+                <div
+                    class="categorybox"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="400"
+                >
+                    <div>
+                        <img src="{{ url_for('static', filename='Non Veg.jpg') }}">
+                        <h2> Non Vegetarian</h2>
+                    </div>
+                </div>
+            </a>
+            <a href="Editors choice.html">
+                <div
+                    class="categorybox"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="400"
+                >
+                    <div>
+                        <img src="{{ url_for('static', filename='Vada Pav.jpg') }}">
+                        <h2> Quarantine Special</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- Some food facts / Testimonials -->
+    <section class="testimonials">
+        <h2 class="heading"> Reviews from our visitors</h2>
+        <div class="container">
+            <div class="contentbox">
+                <div>
+                    <p>
+                        The recipies are good and well written. The site is nice and I expect more and more
+                            people to come here and have a look at this well written recipies website.
+                    </p>
+                    <h3 class="subscript">
+                        ~Anonymous
+                    </h3>
+                </div>
+            </div>
+            <div class="contentbox">
+                <div>
+                    <p>
+                        I really appreciate the efforts of creators and am genuinely hoping to see this forum to become
+                            really successful and have loads of visitors.
+                            I myself would like to add few of my traditional and experimental dishes.
+                    </p>
+                    <h3 class="subscript">
+                        ~Shizan Alam
+                    </h3>
+                </div>
+            </div>
+            <div>
+                <br>
+                <br>
+                <h3 style="color: #fff;">Let us know your reviews of our website! Just click on the contact us at top of the page! Genuine reviews would be displayed with full name on our website....</h3>
+            </div>
+            <div class="counter">
+                <!-- <div id="sfcjb3xzbhn7uklhghdeaf9xlr9ud2chbnq"></div>
+                                <script type="text/javascript" src="https://counter11.stat.ovh/private/counter.js?c=jb3xzbhn7uklhghdeaf9xlr9ud2chbnq&down=async" async></script>
+                                <noscript>
+                                    <a href="https://www.freecounterstat.com" title="page hit counter">
+                                        <img
+                                            src="https://counter11.stat.ovh/private/freecounterstat.php?c=jb3xzbhn7uklhghdeaf9xlr9ud2chbnq"
+                                            border="0"
+                                            title="page hit counter"
+                                            alt="page hit counter"
+                                        >
+                                    </a>
+                                </noscript>
+                            </div> -->
+                <!-- <script type="text/javascript" src="http://m.free-codes.org/g.php?id=2002"></script>
+                                <SCRIPT language="JavaScript" type="text/javascript">
+                                    var hit = ( Math.ceil( Math.random() * 10000 ).toString() ).bold().fontcolor( 'blue' );
+                                    document.write( "Current Count of Visitors " + hit );
+                                </SCRIPT> -->
+            </div>
+        </section>
+        <!-- Order Food -->
+        <!-- <section class="connect">
+
+            <h2 class="heading"> Order Food </h2>
+            <p class="text">
+                Order Food online with these amazing food and beverage services anywhere over the world.
+            </p>
+
+            <div class="imagebox">
+                <a href="https://www.swiggy.com/"> <img class="swiggy" src="Images/Swiggy.png"></a>
+                <a href="https://www.zomato.com/pune"> <img class="zomato" src="Images/Zomato.png"></a>
+                <a href="https://www.foodpanda.com/"> <img class="foodpanda" src="Images/Foodpanda.png"></a>
+            </div>
+
+        </section> -->
+        <!-- About Us -->
+        <section class="aboutus">
+            <h2 class="heading"> About Us</h2>
+            <p class="text">
+                We are team of friends, still pursuing education in our different fields.
+                We are making this website out of our own interest and wish to get into web development.
+                Hope you all love and support our efforts and get some productive information which could help you.
+                <br>
+                <br>
+                Creators and Editors -
+                <i class="creator_names">
+                    <br>
+                    Abhay Ubhale
+                    <br>
+                    (VJTI - B.Tech Computer Engineering)
+                    <br>
+                    Vijay Prajapati
+                    <br>
+                    (VP - Computer Engineering)
+                    <br>
+                    Purva Anjarlekar
+                    <br>
+                    (VJTI - B.Tech Computer Engineering)
+                </i>
+                <br>
+                <br>
+            </p>
+            <div class="terms">
+                <a href="Terms & Conditions.html">Terms & Conditions</a>
+                <a href="Privacy Policy.html">Privacy Policy</a>
+            </div>
+            <br>
+            <p class="creator_names">
+                © 2020 FOODUKO Inc.
+                <br>
+                All Rights Reserved.
+            </p>
+        </section>
+        <script type="text/javascript" src="{{ url_for('static', filename='aos.js') }}"></script>
+        <script type="text/javascript">
+            AOS.init();
+        </script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/7.15.0/firebase-app.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/7.15.0/firebase-analytics.js"></script>
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+        <!-- 
+    The core Firebase JS SDK is always required and must be listed first
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDLtRjdoIldrjrw3bpq5dGizyBJJE9gqOg",
+        authDomain: "fooduko-52514.firebaseapp.com",
+        databaseURL: "https://fooduko-52514.firebaseio.com",
+        projectId: "fooduko-52514",
+        storageBucket: "fooduko-52514.appspot.com",
+        messagingSenderId: "1022530810768",
+        appId: "1:1022530810768:web:6ac6f712fa9a080996f915",
+        measurementId: "G-1VN6L7EEKN"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>-->
+</body>
+{% endblock content %}
+

@@ -1,0 +1,169 @@
+
+.joinus{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #ff6720;
+}
+
+.contain{
+	width: 80%;
+	padding: 20px;
+}
+
+.contain h2{
+	color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+	text-shadow: 5px 5px 15px black;
+}
+
+.contain .row100{
+	position: relative;
+	width: 100%;
+	display:inline-grid;
+	grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+.contain .row100 .col{
+	position: relative;
+	width: 100%;
+	padding: 0 10px;
+	margin: 30px 0 10px;
+	transition: 0.5s;
+}
+
+.contain .row100 .inputBox{
+	position: relative;
+	width: 100%;
+	height:40px;
+	color: #45f3ff;
+}
+
+.color{
+	color: rgb(72, 199, 216);
+}
+
+.contain .row100 .inputBox input{
+	position: absolute;
+	width: 100%;
+	height:100%;
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	padding:0 10px;
+	z-index: 1;
+	color: #000;
+}
+
+.contain .row100 .inputBox .textr{
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 40px;
+	font-size: 18px;
+	padding: 0 10px;
+	display: block;
+	transition: 0.5s;
+	pointer-events: none;
+}
+
+.contain .row100 .inputBox input:focus + .textr,
+.contain .row100 .inputBox input:valid + .textr{
+	top: -35px;
+	left: -10px;
+}
+
+.contain .row100 .inputBox .line{
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: #45f3ff;
+	transition:0.5s;
+	border-radius: 2px;
+	pointer-events: none;
+}
+
+.contain .row100 .inputBox input:focus ~ .line,
+.contain .row100 .inputBox input:valid ~ .line{
+	height: 100%;
+}
+
+.contain .row100 .inputBox .textarea{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	padding: 10px 0;
+}
+
+.contain .row100 .inputBox .textarea textarea{
+	height: 100%;
+	resize: none;
+}
+
+.contain .row100 .inputBox textarea:focus + .textr,
+.contain .row100 .inputBox textarea:valid + .textr{
+	top: -35px;
+	left: -10px;
+}
+
+.contain .row100 .inputBox textarea:focus ~ .line,
+.contain .row100 .inputBox textarea:valid ~ .line{
+	height: 100%;
+}
+
+.btn button{
+	border:2px solid #45f3ff;
+	padding: 7px 35px;
+	margin-left: 500px;
+	cursor: pointer;
+	outline: none;
+	background: transparent;
+	color: #fff;
+	font-size: 19px;
+	border-radius: 4px;
+	transition: 0.4s;
+}
+
+.btn button:hover{
+	background: #45f3ff;
+	color: black;
+}
+
+.tbt1{
+	height: 280px;
+	width: 330px;
+}
+
+.tbt2{
+	height: 280px;
+	width: 680px;
+}
+
+@media( max-width:991px){
+.tbt1{
+        height: 300px;
+        width: 300px;
+    }
+
+    .tbt2{
+        height: 300px;
+        width:300px;
+    }
+    .contain{
+    	width:100%;
+    }
+    .contain .row100{
+    display: inline-grid;
+    grid-template-rows: auto auto auto 330px 30px;
+    }
+
+    .btn button{
+        margin-left: 80px;
+    }
+}

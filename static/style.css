@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.Banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.Banner .content {
+    position: relative;
+    max-width: 800px;
+    text-align: center;
+}
+
+.Banner .content h2 {
+    color: white;
+    font-size: 40px;
+    text-shadow: 5px 5px 15px black;
+}
+
+.Banner .content p {
+    color: #fff;
+    font-size: 25px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    z-index: 1000;
+    transition: 0.6s;
+    background-color: #fff;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+    transition: width 1s, height 1s;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 600;
+    transition: 0.6s;
+}
+
+.term-contact {
+    margin: 0;
+    position: relative;
+    width: 200px;
+    left: 40%;
+}
+
+/* li a:hover {
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+header ul li a:hover {
+    background-color: #414A4C;
+    color: whitesmoke;
+    width: 200px;
+    height: 44px;
+    transition:0.2s;
+} */
+
+.terms {
+    text-align: center;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.terms a {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 0em 1em;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.terms a:active {
+    background-color: cyan;
+}
+
+.text {
+    color: #fff;
+    font-size: 20px;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.about .contentbox {
+    background: #27e916;
+    padding: 100px;
+    width: 50%;
+    margin-top: 5px;
+}
+
+.heading {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 5px 5px 15px black;
+}
+
+.ptext {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.about .imagebox {
+    margin-top: 5px;
+    background: url(Mocktail.jpg);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.categories {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(26, 96, 187);
+    padding: 40px;
+    text-align: center;
+}
+
+.categories a {
+    text-decoration: none;
+}
+
+.categories .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.categories .container .categorybox {
+    position: relative;
+    background: whitesmoke;
+    width: 300px;
+    height: 350px;
+    box-shadow: 10px 10px 40px black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories .heading_categories {
+    color: whitesmoke;
+    text-shadow: 5px 5px 15px black;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.categories .container .categorybox img {
+    width: 300px;
+    height: 220px;
+}
+
+.categories .container .categorybox h2 {
+    font-size: 25px;
+    text-shadow: 1px 1px 6px grey;
+    font-weight: 500;
+    color: #162c3b;
+    letter-spacing: 1px;
+}
+
+.testimonials {
+    padding: 60px;
+    background: rgb(255, 87, 87);
+    margin-top: -200px;
+    padding-top: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonials .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    flex-wrap: wrap;
+}
+
+.testimonials .container .contentbox {
+    background: #fff;
+    width: 500px;
+    height: 250px;
+    padding: 35px 35px;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: left;
+    border-radius: 15px;
+}
+
+.testimonials .container .contentbox p {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.counter {
+    font-size: 30px;
+}
+
+.connect {
+    background: black;
+    padding: 50px;
+    text-align: center;
+}
+
+.connect .imagebox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.connect .imagebox img {
+    max-width: 200 px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.connect .imagebox img:hover {
+    opacity: 1;
+}
+
+.zomato {
+    padding-top: 30px;
+}
+
+.foodpanda {
+    padding-top: 50px;
+}
+
+.aboutus {
+    background: black;
+    padding: 50px;
+    text-align: center;
+}
+
+.terms {
+    margin: 0;
+    position: relative;
+}
+
+.creator_names {
+    color: turquoise;
+    font-size: 18px;
+}
+
+@media( max-width:991px) {
+    header .logo {
+        padding: 10px;
+    }
+    header ul {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 70vh);
+        padding: 0px 20px;
+        text-align: center;
+        overflow: auto;
+        transition: 0.5s;
+        background: #111;
+        flex-direction: column;
+        transform: translateY(-100%);
+    }
+    header.active ul {
+        top: 60px;
+        transform: translateY(0);
+    }
+    header ul li a {
+        margin: 5px 0;
+        font-size: 20px;
+        color: #fff;
+    }
+    .toggle {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .toggle::before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #111;
+        z-index: 1;
+        box-shadow: 0 10px 0 #111;
+        transition: 0.5s;
+    }
+    .toggle::after {
+        content: "";
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #111;
+        z-index: 1;
+        transition: 0.5s;
+    }
+    header.active .toggle::before {
+        top: 14px;
+        transform: rotate(45deg);
+        box-shadow: 0px 0px 0px #111;
+    }
+    header.active .toggle:after {
+        bottom: 14px;
+        transform: rotate(-45deg);
+    }
+    .Banner {
+        margin: 0px;
+        padding: 30px;
+        width: 100%;
+    }
+    .Banner header {
+        padding: 5px 15px;
+    }
+    .Banner .content h2 {
+        font-size: 25px;
+    }
+    .Banner .content h1 {
+        font-size: 25px;
+    }
+    .Banner .content p {
+        font-size: 16px;
+    }
+    .heading {
+        font-size: 25px;
+    }
+    .categories .heading_categories {
+        font-size: 25px;
+    }
+    .about {
+        position: relative;
+        width: 100%;
+        display: list-item;
+    }
+    .about .contentbox {
+        background: #27e916;
+        padding: 100px;
+        width: 100%;
+    }
+    .about .imagebox {
+        background: url(Mocktail.jpg);
+        width: 100%;
+        background-size: cover;
+        background-position: bottom;
+    }
+    .about .contentbox, .about .imagebox {
+        width: 100%;
+        padding: 50px;
+        min-height: 400px;
+        text-align: center;
+    }
+    .aboutus .text {
+        font-size: 15px;
+    }
+    .categories {
+        padding: 30px;
+    }
+    .categories .container {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .categories .container .categorybox {
+        margin: 20px;
+        width: 300px;
+        height: 350px;
+    }
+    .testimonials {
+        padding-top: 50px;
+        margin-top: 0px;
+    }
+    .testimonials .container .contentbox {
+        padding: 20px 20px;
+        max-width: 550px;
+        margin-bottom: 40px;
+    }
+    .testimonials .container .contentbox:last-child {
+        margin-bottom: 0px;
+    }
+    .testimonials .container .contentbox p {
+        font-size: 15px;
+    }
+    .terms {
+        margin: 0;
+        position: relative;
+        font-size: 10px;
+    }
+    .creator_names {
+        color: turquoise;
+        font-size: 13px;
+    }
+    .subscript {
+        font-size: 12px;
+    }
+}

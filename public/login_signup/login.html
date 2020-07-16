@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!-- Google AdSense Code Dont touch it --><script data-ad-client="ca-pub-2589257874108853" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <title> FOODUKO-Login/SignUp </title>
+<!-- 
+  -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+
+    <script src="login.js"></script>
+
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" type="image/ico" href="Images/Foodukologo.jpg">
+
+    <script type="text/javascript">
+        function toggle() {
+            var head = document.getElementById("header")
+            head.classList.toggle('active')
+        }
+    </script>
+
+</head>
+
+<body>
+
+
+    <header id="header">
+        <a href="../index.html" class="logo"> FOODUKO </a>
+        <ul>
+            <li><a href="../index.html"> Home </a></li>
+            <li><a href="../Categories.html"> Categories </a></li>
+            <li><a href="../login.html"> Login </a></li>
+
+            <li><a href="../Recipes.html"> Recipes </a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+    <div class="main">
+        <p class="sign" align="center">Sign Up</p>
+        <form class="form1">
+          <input class="un" id="email" type="email" align="center" placeholder="Email">
+          <!-- <input class="pass" id="password" type="password" align="center" placeholder="Password"> -->
+          <a class="submit" align="center" onclick="signUp()">Sign Up</a>
+          <!-- <p class="forgot" align="center"><a href="#">Forgot Password?</p>                 -->
+    </div>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.15.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script src="/__/firebase/7.15.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+</body>
+
+</html>

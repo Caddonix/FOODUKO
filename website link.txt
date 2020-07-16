@@ -1,0 +1,12 @@
+Firebase Hosted Website Link:
+
+https://fooduko-52514.web.app/
+
+OR
+
+https://fooduko-52514.firebaseapp.com/
+
+Any of the above link can be used to open the Fooduko website on any of the browser.
+Both links are same, they point to a single address on internet so it's a single website.
+This is a sub domain name with main domain being Firebase.
+So this domain is just for testing and development purpose.

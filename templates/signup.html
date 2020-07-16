@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<head> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login_signup.css') }}">
+</head>
+
+<body>
+
+    <div class="login-wrap">
+        <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign Up</label>
+            <div class="login-form">
+                <form method="POST" action="">
+                    {{ form.hidden_tag() }}
+                    <fieldset class="form-group">
+                        <!-- <legend class="border-bottom mb-4">Log In</legend> -->
+                        <div class="group">
+                            {{ form.username.label(class="label") }}
+                            {% if form.username.errors %}
+                                {{ form.username(class="form-control form-control-lg is-invalid input") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.username.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.username(class="form-control form-control-lg input") }}
+                            {% endif %}
+                        </div>
+                        <div class="group">
+                            {{ form.email.label(class="label") }}
+                            {% if form.email.errors %}
+                                {{ form.email(class="form-control form-control-lg is-invalid input") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.email.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.email(class="form-control form-control-lg input") }}
+                            {% endif %}
+                        </div>
+                        <div class="group">
+                            {{ form.password.label(class="label") }}
+                            {% if form.password.errors %}
+                                {{ form.password(class="form-control form-control-lg is-invalid input") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.password.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.password(class="form-control form-control-lg input") }}
+                            {% endif %}
+                        </div>
+                        <div class="group">
+                            {{ form.confirm_password.label(class="label") }}
+                            {% if form.confirm_password.errors %}
+                                {{ form.confirm_password(class="form-control form-control-lg is-invalid input") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.confirm_password.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.confirm_password(class="form-control form-control-lg input") }}
+                            {% endif %}
+                        </div>
+                    </fieldset>
+                    <div class="group">
+                        {{ form.submit(class="btn btn-outline-info button") }}
+                    </div>
+                </form>
+            </div>
+            <div class="border-top pt-3">
+                <small class="text-white">
+                    Already Have An Account? <a class="ml-2 text-info btn-lg" href="{{ url_for('login') }}">Login</a>
+                </small>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+{% endblock content %}
